@@ -2,16 +2,16 @@
 <testng-results skipped="3" failed="0" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="183" started-at="2019-06-17T18:56:10Z" finished-at="2019-06-17T18:56:10Z">
+  <suite name="Default suite" duration-ms="429" started-at="2019-06-17T19:59:17Z" finished-at="2019-06-17T19:59:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="183" started-at="2019-06-17T18:56:10Z" finished-at="2019-06-17T18:56:10Z">
+    <test name="Default test" duration-ms="429" started-at="2019-06-17T19:59:17Z" finished-at="2019-06-17T19:59:18Z">
       <class name="com.facebook.qa.testcases.LoginPageTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="14" started-at="2019-06-18T00:26:10Z" finished-at="2019-06-18T00:26:10Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="52" started-at="2019-06-18T01:29:18Z" finished-at="2019-06-18T01:29:18Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.facebook.qa.base.Testbase.initialization(Testbase.java:54)
+	at com.facebook.qa.base.Testbase.initialization(Testbase.java:59)
 	at com.facebook.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -46,11 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="loginPageTitleTest()[pri:1, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="loginPageTitleTest" duration-ms="2" started-at="2019-06-18T00:26:10Z" finished-at="2019-06-18T00:26:10Z">
+        <test-method status="SKIP" signature="loginPageTitleTest()[pri:1, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="loginPageTitleTest" duration-ms="2" started-at="2019-06-18T01:29:18Z" finished-at="2019-06-18T01:29:18Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.facebook.qa.base.Testbase.initialization(Testbase.java:54)
+	at com.facebook.qa.base.Testbase.initialization(Testbase.java:59)
 	at com.facebook.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -85,15 +85,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="0" started-at="2019-06-18T00:26:10Z" finished-at="2019-06-18T00:26:10Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="0" started-at="2019-06-18T01:29:18Z" finished-at="2019-06-18T01:29:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="loginPageImagetest()[pri:2, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="loginPageImagetest" duration-ms="0" started-at="2019-06-18T00:26:10Z" finished-at="2019-06-18T00:26:10Z">
+        <test-method status="SKIP" signature="loginPageImagetest()[pri:2, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="loginPageImagetest" duration-ms="0" started-at="2019-06-18T01:29:18Z" finished-at="2019-06-18T01:29:18Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.facebook.qa.base.Testbase.initialization(Testbase.java:54)
+	at com.facebook.qa.base.Testbase.initialization(Testbase.java:59)
 	at com.facebook.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -128,15 +128,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageImagetest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="0" started-at="2019-06-18T00:26:10Z" finished-at="2019-06-18T00:26:10Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="0" started-at="2019-06-18T01:29:18Z" finished-at="2019-06-18T01:29:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="loginTest()[pri:3, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="loginTest" duration-ms="0" started-at="2019-06-18T00:26:10Z" finished-at="2019-06-18T00:26:10Z">
+        <test-method status="SKIP" signature="loginTest()[pri:3, instance:com.facebook.qa.testcases.LoginPageTest@5e5792a0]" name="loginTest" duration-ms="0" started-at="2019-06-18T01:29:18Z" finished-at="2019-06-18T01:29:18Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.facebook.qa.base.Testbase.initialization(Testbase.java:54)
+	at com.facebook.qa.base.Testbase.initialization(Testbase.java:59)
 	at com.facebook.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)

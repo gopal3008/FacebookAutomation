@@ -26,6 +26,7 @@ public class Testbase {
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/"
 					+ "facebook/qa/config/config.properties");
 			prop.load(ip);
+			System.out.println("Config Loading");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -34,9 +35,14 @@ public class Testbase {
 	}
 	
 	public static void initialization(){
-		String browserName = prop.getProperty("browser");
+		System.out.println("read browser property");
+		String browserName = prop.getProperty("browser");//prop.getProperty("browser");
+		System.out.println("Got browser name");
+		System.out.println(browserName);
 		if(browserName.equals("chrome")){
-			WebDriverManager.chromedriver().setup();
+			System.out.println("chrome browser");
+			System.setProperty("webdriver.chrome.driver","C:/selenium/ChromeDriver_win32/chromedriver.exe");
+//			WebDriverManager.chromedriver().setup();
 			driver  = new ChromeDriver();
 		}
 		else if(browserName.equals("FF")){
@@ -47,15 +53,15 @@ public class Testbase {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
-		else{
-			System.out.println("Please select the browser name out of : chrome/FF/IE");
-		}
-		
+//		else{
+//			System.out.println("Please select the browser name out of : chrome/FF/IE");
+//		}
+		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
+		
 	}
 	
 	
