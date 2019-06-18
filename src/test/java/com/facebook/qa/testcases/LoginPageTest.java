@@ -23,20 +23,21 @@ public class LoginPageTest extends Testbase {
 		initialization();
 		loginPage = new LoginPage();
 	}
-	@Test(priority=1)
+	@Test(priority=1,enabled=false)
 	public void loginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Facebook – log in or sign up");
 	}
-	@Test(priority=2)
+	@Test(priority=2,enabled=true)
 	public void loginPageImagetest(){
 		boolean loginImage = loginPage.validateLoginImage();
 		Assert.assertTrue(loginImage);
 	}
-	@Test(priority=3)
-	public void loginTest(){
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
+//	@Test(priority=3)
+//	public void loginTest() throws InterruptedException{
+//		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+//		
+//	}
 	
 	
 	

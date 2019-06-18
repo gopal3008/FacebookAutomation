@@ -6,10 +6,8 @@
       <class name="com.facebook.qa.testcases.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginPageImagetest"/>
           <include name="loginTest"/>
           <include name="setUp"/>
-          <include name="loginPageTitleTest"/>
         </methods>
       </class> <!-- com.facebook.qa.testcases.LoginPageTest -->
     </classes>

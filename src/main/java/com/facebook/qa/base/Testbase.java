@@ -36,13 +36,13 @@ public class Testbase {
 	
 	public static void initialization(){
 		System.out.println("read browser property");
-		String browserName = prop.getProperty("browser");//prop.getProperty("browser");
+		String browserName = prop.getProperty("browser").trim();//prop.getProperty("browser");
 		System.out.println("Got browser name");
 		System.out.println(browserName);
 		if(browserName.equals("chrome")){
 			System.out.println("chrome browser");
-			System.setProperty("webdriver.chrome.driver","C:/selenium/ChromeDriver_win32/chromedriver.exe");
-//			WebDriverManager.chromedriver().setup();
+//			System.setProperty("webdriver.chrome.driver","C:/selenium/ChromeDriver_win32/chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver  = new ChromeDriver();
 		}
 		else if(browserName.equals("FF")){
